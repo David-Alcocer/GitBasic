@@ -381,7 +381,62 @@ Antes de trabajar en equipo, conoce los botones de "deshacer". Git tiene uno par
 
 ### <font color="#F05032">Bloque 9 — Fork + colaboración en equipo + Pull Request *(equipos)*</font>
 
-**Fork:** copiar un repositorio ajeno a tu cuenta para poder modificarlo junto con tu equipo.
+Antes de tocar GitHub Desktop, entiende las dos ideas nuevas de este bloque.
+
+---
+
+#### ¿Qué es un Fork?
+
+Un **fork** es una copia completa de un repositorio ajeno que queda bajo tu cuenta de GitHub. Es como fotocopiar un libro para poder subrayarlo sin tocar el original.
+
+| | Repo original (instructor) | Tu fork |
+|---|---|---|
+| **Dueño** | El instructor | Tú |
+| **Puedes hacer push directo** | No | Sí |
+| **Relación** | "upstream" | copia independiente |
+
+---
+
+#### ¿Qué es un Pull Request?
+
+Un **Pull Request (PR)** es una solicitud formal para que el dueño de un repositorio acepte tus cambios. No empuja código a la fuerza — propone los cambios y abre una conversación.
+
+El flujo completo es:
+
+```
+Tu fork/rama  →  Pull Request  →  Revisión  →  Merge (si se aprueba)
+```
+
+```mermaid
+gitGraph
+   commit id: "repo del instructor"
+   branch mi-fork/mi-rama
+   checkout mi-fork/mi-rama
+   commit id: "mis cambios"
+   checkout main
+   merge mi-fork/mi-rama id: "Merge del PR"
+```
+
+**¿Por qué existe el PR y no simplemente push?**
+
+En proyectos reales nadie tiene permiso de escribir directamente en el repositorio de otro. El PR permite que el dueño:
+- vea exactamente qué cambió
+- deje comentarios línea por línea
+- apruebe o rechace antes de que el código entre a `main`
+
+---
+
+#### Ejemplo concreto antes de hacerlo
+
+Imagina que el instructor tiene el repo `instructor/GitBasic`. Tú no puedes hacer push ahí, pero sí puedes:
+
+1. Hacer **fork** → obtienes `tu-usuario/GitBasic`
+2. Crear una rama y hacer cambios ahí
+3. Hacer **push** a tu fork
+4. Abrir un **Pull Request** que diga: *"Quiero que aceptes estos cambios en tu repo"*
+5. El instructor lo revisa → si está bien, hace **merge**
+
+Así el instructor controla qué entra a su repositorio y puede ver el trabajo de cada equipo.
 
 ---
 
