@@ -2,7 +2,7 @@
 
 ## Integrantes
 
-| Nombre | Carrera | Semestre |
+| Iván Magallón | LIS | Primero |
 |---|---|---|
 | | | |
 | | | |
