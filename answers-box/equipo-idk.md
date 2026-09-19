@@ -3,9 +3,9 @@
 ## Integrantes
 
 | Nombre | Carrera | Semestre |
-|---|---|---|
-| | | |
-| | | |
+| ------ | ------- | -------- |
+|        |         |          |
+|        |         |          |
 
 ## Perfiles
 
