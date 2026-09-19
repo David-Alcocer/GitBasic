@@ -4,7 +4,7 @@
 
 | Iván Magallón | LIS | Primero |
 |---|---|---|
-| | | |
+|Andre Casanova | Lis |3ero |
 | | | |
 
 ## Perfiles
