@@ -28,6 +28,14 @@ Bienvenido al curso. Aquí encontrarás todo lo que necesitas para seguir la ses
 
 ---
 
+## <font color="#179287">Información del curso</font>
+
+| Salón | Horario |
+|---|---|
+| CC4 | 9:00 – 13:00 |
+
+---
+
 ## <font color="#179287">Herramientas y recursos</font>
 
 | Recurso | Enlace |
