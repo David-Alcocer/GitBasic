@@ -3,7 +3,7 @@
 
 ## Integrantes
 
-| Nombre | Carrera | Semestre |
+| Iván Magallón | LIS | Primero |
 |---|---|---|
 | | | |
 |Andre Casanova | Lis |3ero |
@@ -16,6 +16,7 @@
 ## Preguntas del equipo
 
 ### ¿Qué es la ingeniería de software?
+*Responde: [Iván] es la disciplina de la ingeniería que aplica principios, métodos y herramientas sistemáticas y cuantificable al diseño de desarrollo operación, prueba y mantenimiento de sistemas de software de calidad*
 *Responde: [Nouvvaz]* Disciplina que desarrolla y construye software a apartir de principios tecnicos y cientificos
 ### ¿Qué son las soft skills?
 *[Nouvvaz]*habilidades que se adquieren durante el aprendizaje al desarrollar software, las cuales tienen un impacto significativo en el dia a dia de un desarrollador*
@@ -29,13 +30,12 @@
 *Responde: [Andre Casanova]*
 Es el campo de la tecnología encargado de optimizar agoritmos o procesos encargados de mejorar el manejo de la información dentro de una empresa
 ### ¿Qué son las soft skills?
-*Responde: [Andre Casanova]*
-Habilidades que se emplean diariamente pero no se les dedica un espacio como una materia o disciplina dedicada en la escuela para su mejoría
+*Responde: [Iván] son las herramientas sociales que se utilizan para comunicarse con los colaboradores y laborar en equipo*
 ### ¿Cómo puedes usar la IA en tu carrera sin perder el protagonismo?
-*Responde: [Andre Casanova]
-A mejorar mi aprendizaje dirigiendo mis dudas y corrigiéndome sin evitar que emplee el razocinio 
+*Responde: [Iván] Utilizándolo para estudiar y que nos pongan diversos ejercicios*
 
 ## Lo más valioso que aprendimos hoy
-> Usar Github
+>Usar Git y github, así como los repositorios
 ## Una pregunta que nos quedó pendiente
+>Ejercicios para que quede claro cómo usar los conocimientos aprendidos
 >¿Qué hay que hacer cuando se está en GitHub con la branch creada?
