@@ -37,8 +37,9 @@ Misma lógica que la versión larga: cada escena existe para generar una pregunt
 
 1. Cuenta de GitHub creada y verificada por cada alumno **antes** de llegar.
 2. Instalados previamente: **GitHub Desktop**, **Visual Studio Code**, Git del sistema.
-3. Extensiones de VS Code ya instaladas antes de clase (no se instalan en vivo, no hay tiempo):
-   - **GitLens**, **Git Graph**, **GitHub Pull Requests and Issues**.
+3. Extensión de VS Code ya instalada antes de clase (no se instala en vivo, no hay tiempo): **GitLens**.
+   - El árbol visual de ramas y commits (**Graph**) ya viene integrado en el panel de Control de código fuente de VS Code: no hay que instalar nada aparte para eso.
+   - No se necesita la extensión "GitHub Pull Requests and Issues": todo el flujo de Pull Requests (crear, revisar, comentar, mergear) se cubre con **GitHub Web**, que además es donde lo verían en un trabajo real si su equipo no usa VS Code para eso.
 4. Repositorio de demostración del instructor ya creado en GitHub, con un `README.md`, para el ejercicio de pull de la Escena 2.
 5. Repositorio u organización compartida ya lista, con los alumnos pre-agregados como colaboradores si es posible (ahorra 5-10 minutos críticos en la Escena 9).
 
@@ -103,7 +104,7 @@ flowchart LR
 1. (5 min) Analogía: `main` es la carretera; una rama es un desvío que nace en un punto exacto y tiene sus propias paradas.
 2. (5 min) Crear rama en Desktop: "Current branch" → "New branch" → nombre descriptivo → Create.
 3. (10 min) Dos commits en la rama nueva, push (Publish branch). Cambiar a `main` y mostrar que ahí **no** están esos cambios.
-4. (10 min) Ver el árbol en **Git Graph** (VS Code): mostrar visualmente la bifurcación. Recalcar el hábito de mirar siempre en qué rama se está parado (barra inferior de VS Code / selector en Desktop).
+4. (10 min) Ver el árbol en la vista **Graph** de VS Code (panel de Control de código fuente, ya integrada, sin instalar nada): mostrar visualmente la bifurcación. Recalcar el hábito de mirar siempre en qué rama se está parado (barra inferior de VS Code / selector en Desktop).
 
 **Diagrama:**
 
@@ -128,7 +129,7 @@ gitGraph
 
 **Guion (versión rápida):**
 
-1. (8 min) **Merge local:** parado en `main` en Desktop → `Branch > Merge into current branch` → elegir la rama → Merge. Confirmar en Git Graph que las líneas se reencuentran.
+1. (8 min) **Merge local:** parado en `main` en Desktop → `Branch > Merge into current branch` → elegir la rama → Merge. Confirmar en la vista **Graph** de VS Code que las líneas se reencuentran.
 2. (17 min) **Merge vía Pull Request:** nueva rama, commit, push. En GitHub.com: banner "Compare & pull request" → crear el PR → mostrar "Files changed" (mismo lenguaje visual de diff que en Desktop/VS Code) → **Merge pull request**. Volver a Desktop, hacer **Pull** en `main` y mostrar el cambio localmente (refuerzo directo de la Escena 2).
 
 **Diagrama:**
@@ -184,7 +185,7 @@ gitGraph
 **Guion (versión rápida):**
 
 1. (5 min) Pestaña **History** en Desktop: recorrer commits, ver diffs. **GitLens** en VS Code: pasar el mouse sobre una línea y ver quién/cuándo la cambió (blame inline).
-2. (10 min) Clic derecho sobre un commit antiguo en **Git Graph** → Checkout / "Create branch from this commit". Ver el estado real de los archivos en ese punto: como pausar un video en un segundo exacto. Volver al presente (checkout a `main`).
+2. (10 min) Clic derecho sobre un commit antiguo en la vista **Graph** de VS Code → Checkout / "Create branch from this commit". Ver el estado real de los archivos en ese punto: como pausar un video en un segundo exacto. Volver al presente (checkout a `main`).
 3. (5 min) Analogía de cierre: el historial es el control deslizante de un video; mirar no compromete nada.
 
 **Diagrama:**
@@ -233,7 +234,7 @@ flowchart TD
 
 **Guion (versión rápida):**
 
-1. (4 min) Mostrar un Git Graph "spaghetti" (varios merges cruzados) vs. uno rebaseado (línea recta). Explicar la diferencia conceptual: no es que Git mienta, es que reubica los commits como si hubieran nacido después de los últimos cambios de `main`.
+1. (4 min) Mostrar, en la vista **Graph** de VS Code, un árbol de commits tipo "spaghetti" (varios merges cruzados) vs. uno rebaseado (línea recta). Explicar la diferencia conceptual: no es que Git mienta, es que reubica los commits como si hubieran nacido después de los últimos cambios de `main`.
 2. (3 min) Recordatorio rápido de la Escena 1: como el repo es solo una carpeta con `.git` adentro, antes de un rebase o un force push que dé nervios siempre se puede copiar toda la carpeta a otro lugar como respaldo manual. No sustituye a Git, pero es una red de seguridad válida.
 3. (6 min) Ejecutar en Desktop: `Branch > Rebase current branch onto main`. Si hay conflicto, se resuelve igual que en la Escena 5. Después, mostrar que el push normal falla y aparece **"Force push origin"**: explicar la advertencia que Desktop muestra antes de permitirlo.
 4. (2 min) Regla de oro repetida: force push solo en ramas propias, nunca en compartidas sin avisar. (Mención opcional de que `git rebase` / `git push --force` existen como comandos, sin ejecutarlos en terminal, solo si sobra tiempo.)
@@ -286,8 +287,8 @@ gitGraph
 
 ## Cierre y recursos (5 min)
 
-- Una frase por escena, recorriendo el Git Graph final del repo compartido: "esa rama fue la Escena 3, ese merge fue la Escena 4, ese conflicto fue la Escena 5...".
-- Recursos para seguir practicando: repetir el ejercicio de la Escena 9 con un proyecto propio, explorar más a fondo GitLens y Git Graph, empezar a usar Pull Requests desde ya en cualquier proyecto personal, aunque sea solo con uno mismo (documenta el hábito de PR incluso en solitario).
+- Una frase por escena, recorriendo la vista **Graph** final del repo compartido: "esa rama fue la Escena 3, ese merge fue la Escena 4, ese conflicto fue la Escena 5...".
+- Recursos para seguir practicando: repetir el ejercicio de la Escena 9 con un proyecto propio, explorar más a fondo GitLens y la vista Graph de VS Code, empezar a usar Pull Requests desde GitHub Web en cualquier proyecto personal, aunque sea solo con uno mismo (documenta el hábito de PR incluso en solitario).
 
 ---
 
